@@ -1,3 +1,145 @@
-h1 {
-    color: red;
+/* Importation de la police d'écriture */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;900&display=swap');
+
+/* Header */
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgHeader {
+    padding-left: 20px;
+    height: 50px;
+}
+
+.navHeader, a {
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #0050fc;
+    font-weight: bold;
+}
+
+/* Article, header */
+
+.rechercheHead h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.rechercheHead {
+    padding-bottom: 10px ;
+    padding-left: 20px;
+}
+
+.rechercheBar {
+    display: inline-flex;
+    max-width: 100%;
+    padding-left: 20px;
+}
+
+.rechercheIco {
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 15px 0 0 15px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.rechercheInput {
+    border-left: none;
+    border-right: none;
+    border: lightgray 1px solid;
+    padding-left: 10px;
+    font-weight: 800;
+}
+
+.rechercheInput::placeholder {
+    color: black;
+}
+
+.rechercheButton {
+    background-color: #0050fc;
+    color: white;
+    border: 1px solid #0050fc;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0 15px 15px 0;
+    padding: 15px;
+}
+
+/* Articles Filtres */
+
+.rechercheFiltres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 700;
+}
+
+.rfTitre {
+    padding: 20px;
+}
+
+.RFF {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px lightgray;
+    margin: 20px;
+    padding-right: 20px;
+    border-radius: 33.33px;
+    color: #333;
+}
+
+.rfF {
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #9ebafc81;
+    color: #0050fc;
+
+}
+
+/* Article Résultat recherche */
+
+.rechercheResultat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.rechercheI {
+    padding: 15px;
+    color: #0050fc;
+    border: lightgray 1px solid;
+    border-radius: 20px;
+    margin-right: 25px;
+    align-self: center;
+}
+
+/* Cartes Hébergements */
+
+.hebergements {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
 }
