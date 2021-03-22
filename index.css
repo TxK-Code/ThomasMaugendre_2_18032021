@@ -146,6 +146,12 @@ body {
 
 /* Cartes Hébergements */
 
+.magicBox {
+    width: 100%;
+    background-color: rebeccapurple;
+}
+
+
 
 .hebergements {
     width: 950px;
@@ -160,6 +166,7 @@ body {
     border: lightgray solid 1px;
     border-radius: 20px;
     margin-top: 15px;
+    width: 100%;
 
 }
 
@@ -168,7 +175,7 @@ body {
 }
 
 .hebTitle {
-    margin-right: 1500px;
+    width: 100%;
 }
 
 .hebergementCard {
@@ -222,6 +229,7 @@ body {
     border: lightgray solid 1px;
     border-radius: 20px;
     margin-top: 15px;
+    width: 25%;
 }
 
 .hsHead {
