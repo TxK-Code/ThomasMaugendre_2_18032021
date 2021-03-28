@@ -128,6 +128,25 @@ body {
 
 /* Article Résultat recherche */
 
+.rechercheResultat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rechercheI {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: #333 solid 1px;
+    padding: 1rem;
+    border-radius: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+    text-align: center;
+    color: #0050fc;
+}
+
 .hbTitre {
     display: flex;
     flex-direction: row;
@@ -157,6 +176,7 @@ body {
     width: 55%;
     margin: 1rem;
     border-radius: 25px;
+    height: 45rem;
 }
 
 .hebergementSecond {
@@ -167,10 +187,11 @@ body {
     width: 35%;
     margin: 1rem;
     border-radius: 25px;
+    height: 45rem;
 }
 
 .hcard1 {
-    background-color: cadetblue;
+    background-color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -178,11 +199,12 @@ body {
     width: 29%;
     height: 29%;
     border-radius: 25px;
-    border: 3px solid;
+    border: 3px solid white;
+    box-shadow: black 2px 2px 5px;
 }
 
 .hcard2 {
-    background-color: chocolate;
+    background-color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -190,21 +212,21 @@ body {
     width: 29%;
     height: 29%;
     border-radius: 25px;
-    border: 3px solid;
+    border: 3px solid white;
+    box-shadow: black 2px 2px 5px;
 }
 
 .hcard3 {
-    background-color: darkgray;
+    background-color: white;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 90%;
-    height: 30%;
+    justify-content: space-between;
+    width: 80%;
+    height: 25%;
     border-radius: 25px;
-    border: 3px solid;
-    margin: 1rem;
+    border: 3px solid white;
     align-self: center;
+    box-shadow: black 2px 2px 5px;
 }
 
 .hTitle1 {
@@ -224,7 +246,85 @@ body {
     width: 60%;
 }
 
+.imgHeb {
+    width: 100%;
+    height: 50%;
+    border-radius: 25px 25px 0 0;
+}
+
+.imgHeb2 {
+    width: 50%;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+}
+
+.textCard {
+    height: 100%;
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+.textCard2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+.h3Heb {
+    text-align: start;
+    font-weight: 600;
+    font-size: 15px;
+    height: 10%;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.h3Heb2 {
+    text-align: start;
+    font-weight: 600;
+    font-size: 15px;
+    height: 10%;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.pHeb {
+    text-align: start;
+    width: 100%;
+    margin-top: 5px;
+} 
+
+.pHeb2 {
+    text-align: start;
+    width: 100%;
+    margin-top: 5px;
+    margin-top: 15px;
+    margin-bottom: 6rem;
+}
+
+.starsHeb {
+    display: flex;
+    flex-direction: row;
+    color: #0050fc;
+}
+
+.starsHeb2 {
+    display: flex;
+    flex-direction: row;
+    color: #0050fc;
+}
+
+.etgrise {
+    color: #F2F2F2;
+}
+
 /* Activités */
+
+.actMars {
+    margin-left: 20px;
+}
 
 .actBig {
     background-color: white;
@@ -249,22 +349,41 @@ body {
 }
 
 .act1 {
-    background-color: red;
+    background-color: white;
     height: 93%;
     margin-top: 1rem;
     border-radius: 25px;
-    border: 3px solid;
+    border: 3px solid white;
     text-align: center;
+    box-shadow: black 2px 2px 5px;
 }
 
 .act2 {
-    background-color: purple;
+    background-color: white;
     height: 45%;
     margin-bottom: 1rem;
     margin-top: 1rem;
     border-radius: 25px;
-    border: 3px solid;
+    border: 3px solid white;
     text-align: center;
+    box-shadow: black 2px 2px 5px;
+}
+
+.imgAct {
+    height: 87%;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.imgAct2 {
+    height: 75%;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.h3Act {
+    text-align: start;
+    margin-left: 15px;
 }
 
 /*Footer*/
@@ -273,6 +392,7 @@ body {
     width: 100%;
     background-color: #f2f2f2;
     padding-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 .footbox {
