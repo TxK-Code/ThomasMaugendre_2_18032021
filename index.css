@@ -36,6 +36,12 @@ body {
     font-weight: 500;
 }
 
+.navA2 {
+    color: #0065FC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .navA:hover {
     color: #0065FC;
     font-weight: bold;
@@ -63,7 +69,7 @@ body {
 }
 
 .rechercheIco {
-    background-color: lightgray;
+    background-color: #F2F2F2;
     padding: 15px;
     border-radius: 15px 0 0 15px;
     text-align: center;
@@ -73,7 +79,7 @@ body {
 .rechercheInput {
     border-left: none;
     border-right: none;
-    border: lightgray 1px solid;
+    border: #F2F2F2 1px solid;
     padding-left: 10px;
     font-weight: 800;
 }
@@ -114,7 +120,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: solid 3px lightgray;
+    border: solid 3px #F2F2F2;
     margin: 20px;
     padding-right: 20px;
     border-radius: 33.33px;
@@ -182,6 +188,8 @@ body {
     margin: 1rem;
     border-radius: 25px;
     height: 45rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .hebergementSecond {
