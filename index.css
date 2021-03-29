@@ -37,10 +37,10 @@ body {
 }
 
 .navA:hover {
-    color: #0050fc;
+    color: #0065FC;
     font-weight: bold;
     padding-top: 25px;
-    border-top: #0050fc 3px solid;
+    border-top: #0065FC 3px solid;
     cursor: pointer;
 }
 
@@ -83,9 +83,9 @@ body {
 }
 
 .rechercheButton {
-    background-color: #0050fc;
+    background-color: #0065FC;
     color: white;
-    border: 1px solid #0050fc;
+    border: 1px solid #0065FC;
     font-weight: bold;
     text-align: center;
     border-radius: 0 15px 15px 0;
@@ -121,8 +121,8 @@ body {
     margin-right: 20px;
     padding: 20px;
     border-radius: 50%;
-    background-color: #9ebafc81;
-    color: #0050fc;
+    background-color: #DEEBFF;
+    color: #0065FC;
 
 }
 
@@ -144,7 +144,7 @@ body {
     height: 0.5rem;
     width: 0.5rem;
     text-align: center;
-    color: #0050fc;
+    color: #0065FC;
 }
 
 .hbTitre {
@@ -267,6 +267,8 @@ body {
 .textCard2 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     height: 100%;
     width: 100%;
     margin-left: 0.5rem;
@@ -301,19 +303,17 @@ body {
     width: 100%;
     margin-top: 5px;
     margin-top: 15px;
-    margin-bottom: 6rem;
 }
 
 .starsHeb {
     display: flex;
     flex-direction: row;
-    color: #0050fc;
+    color: #0065FC;
 }
 
 .starsHeb2 {
     display: flex;
-    flex-direction: row;
-    color: #0050fc;
+    color: #0065FC;
 }
 
 .etgrise {
