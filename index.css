@@ -2,10 +2,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;900&display=swap');
 
+/*Header @media */
+
+
+@media (max-width: 1000px) 
+
+{
+
+    .hebergementFirst {
+        background-color: red;
+    }
+
+}
+
 /* Header */
 
 body {
     font-family: "Raleway", sans-serif;
+}
+
+footer {
+    font-family: "Raleway", sans-serif;
+    background-color: #F2F2F2;
+}
+
+h3 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+strong {
+    font-weight: 600;
 }
 
 .header {
@@ -33,13 +60,13 @@ body {
 .navA {
     color: black;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .navA2 {
     color: #0065FC;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .navA:hover {
@@ -50,11 +77,16 @@ body {
     cursor: pointer;
 }
 
+/* Header @media */
+
+
+
 /* Article, header */
 
 .rechercheHead h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 .rechercheHead {
@@ -108,11 +140,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .rfTitre {
     padding: 20px;
+    font-weight: 600;
 }
 
 .RFF {
@@ -150,10 +183,10 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     border: #333 solid 1px;
-    padding: 1rem;
+    padding: 0.6rem;
     border-radius: 50%;
-    height: 0.5rem;
-    width: 0.5rem;
+    height: 1rem;
+    width: 1rem;
     text-align: center;
     color: #0065FC;
 }
@@ -213,7 +246,7 @@ body {
     height: 100%;
     border-radius: 25px;
     border: 3px solid white;
-    box-shadow: black 2px 2px 5px;
+    box-shadow: rgba(100, 100, 100, 0.1) 10px 10px 5px;
 }
 
 .hcard2 {
@@ -226,7 +259,7 @@ body {
     height: 100%;
     border-radius: 25px;
     border: 3px solid white;
-    box-shadow: black 2px 2px 5px;
+    box-shadow: rgba(100, 100, 100, 0.1) 10px 10px 5px;
 }
 
 .hcard3 {
@@ -239,7 +272,7 @@ body {
     border-radius: 25px;
     border: 3px solid white;
     align-self: center;
-    box-shadow: black 2px 2px 5px;
+    box-shadow: rgba(100, 100, 100, 0.1) 10px 10px 5px;
 }
 
 .aHeb {
@@ -282,45 +315,65 @@ body {
 
 .imgHeb {
     width: 100%;
-    height: 50%;
+    height: 60%;
     border-radius: 25px 25px 0 0;
+    object-fit: cover;
 }
 
 .imgHeb2 {
-    width: 50%;
+    width: 250px;
     height: 100%;
     border-radius: 25px 0 0 25px;
+    object-fit: cover;
 }
 
 .textCard {
-    height: 50%;
+    height: 40%;
     width: 100%;
     margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .textCard2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
     margin-left: 0.5rem;
 }
 
+.texteCarte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .h3Heb {
     text-align: start;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
     height: 10%;
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .h3Heb2 {
     text-align: start;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
+    height: 10%;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.h3Heb3 {
+    text-align: start;
+    font-weight: 600;
+    font-size: 17px;
     height: 10%;
     margin-top: 10px;
     margin-bottom: 0;
@@ -330,24 +383,29 @@ body {
     text-align: start;
     width: 100%;
     margin-top: 5px;
+    font-weight: 500;
+    font-size: 15px;
 } 
 
 .pHeb2 {
     text-align: start;
     width: 100%;
-    margin-top: 5px;
-    margin-top: 15px;
+    font-weight: 400;
+    margin-top: 0px;
 }
 
 .starsHeb {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 5px;
     color: #0065FC;
 }
 
 .starsHeb2 {
     display: flex;
     color: #0065FC;
+    margin-bottom: 5px;
 }
 
 .etgrise {
@@ -381,29 +439,48 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: center;
     height: 30rem;
+    margin-top: 1rem;
 }
 
 .actOne {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
 }
 
 .actTwo {
     background-color: white;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
     height: 100%;
 }
 
 .aAct {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 90%;
+    height: 100%;
     text-decoration: none;
     color: black;
     padding: 0;
-    margin: 1rem;
+    font-size: 1rem;
+}
+
+.aAct2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 48%;
+    text-decoration: none;
+    color: black;
+    padding: 0;
     font-size: 1rem;
 }
 
@@ -415,36 +492,42 @@ body {
     border: 3px solid white;
     text-align: center;
     box-shadow: black 2px 2px 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .act2 {
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 45%;
-    margin-bottom: 1.3rem;
+    height: 100%;
     margin-top: 0;
     border-radius: 25px;
     border: 3px solid white;
     text-align: center;
     box-shadow: black 2px 2px 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .imgAct {
     height: 87%;
     width: 100%;
     border-radius: 25px 25px 0 0;
+    object-fit: cover;
 }
 
 .imgAct2 {
-    height: 75%;
+    height: 150px;
     width: 100%;
     border-radius: 25px 25px 0 0;
+    object-fit: cover;
 }
 
 .h3Act {
     text-align: start;
     margin-left: 15px;
+    font-weight: 600;
 }
 
 /*Footer*/
@@ -476,7 +559,7 @@ body {
     padding-left: 0;
     padding-bottom: 0;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     color: black;
 }
