@@ -1,6 +1,6 @@
 /* Importation de la police d'écriture */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Header */
 
@@ -8,8 +8,21 @@ main {
     font-family: "Raleway", sans-serif;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Raleway", sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 footer {
@@ -23,7 +36,7 @@ h3 {
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .header {
@@ -78,7 +91,7 @@ strong {
     cursor: pointer;
 }
 
-@media (max-width: 1312px)
+@media (max-width: 500px)
 {
     header {
         display: flex;
@@ -106,10 +119,12 @@ strong {
         width: 30%;
         height: 50px;
         padding: 0;
-        margin-top: 1.7rem;
+        margin-top: 1.8rem;
+        margin-right: 1.7rem;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 700;
         color: #0065FC;
+        font-size: 17px;
     }
 
     .navHeaderMobile {
@@ -128,6 +143,7 @@ strong {
         text-decoration: none;
         color: #333;
         font-weight: 500;
+        border-bottom: solid #f2f2f2 3px;
     }
 
     .navAMob:hover {
@@ -139,9 +155,16 @@ strong {
 /* Article, header */
 
 .rechercheHead h1 {
-    font-size: 25px;
-    font-weight: 600;
     margin-bottom: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.rechercheHead p {
+    margin-top: 0.4rem;
+    margin-left: 0.1rem;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .rechercheHead {
@@ -166,9 +189,10 @@ strong {
 .rechercheInput {
     border-left: none;
     border-right: none;
-    border: #F2F2F2 1px solid;
+    border: #deebff 1px solid;
     padding-left: 10px;
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .rechercheInput::placeholder {
@@ -179,7 +203,8 @@ strong {
     background-color: #0065FC;
     color: white;
     border: 1px solid #0065FC;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 16px;
     text-align: center;
     border-radius: 0 15px 15px 0;
     padding: 15px;
@@ -191,6 +216,38 @@ strong {
 
 .rechercheButton2 {
     display: none;
+}
+
+@media (max-width: 500px)
+{
+
+    #headerh1 {
+        font-size: 23px;
+        font-weight: 800;
+    }
+
+    .rechercheHead p {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .rechercheBar {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .rechercheIco {
+        font-size: 18px;
+        margin-left: 1.2rem;
+    }
+
+    .rechercheInput {
+        font-size: 18px;
+        font-weight: 800;
+        margin-right: -2rem;
+    }
+
 }
 
 /* Articles Filtres */
@@ -208,7 +265,7 @@ strong {
 
 .rfTitre {
     padding: 20px;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .rffA {
@@ -234,6 +291,8 @@ strong {
     justify-content: center;
     padding-right: 20px;
     color: #333;
+    font-weight: 800;
+    font-size: 18px;
 }
 
 .RFF:hover {
@@ -252,7 +311,7 @@ strong {
     width: 1rem;
 }
 
-@media (max-width: 1312px)
+@media (max-width: 500px)
 {
     .rechercheFiltres {
         display: block;
@@ -269,9 +328,6 @@ strong {
         margin-left: 15px;
     }
 
-    .rechercheBar {
-        padding: 20px;
-    }
 
     .rechercheButton {
         display: none;
@@ -284,8 +340,9 @@ strong {
         border: 1px solid #0065FC;
         font-weight: bold;
         text-align: center;
-        border-radius: 0 15px 15px 0;
+        border-radius: 15px 15px 15px 15px;
         padding: 15px;
+        font-size: 18px;
     }
 
     .rechercheHead {
@@ -306,13 +363,14 @@ strong {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: 1rem;
     }
 
     .rfTitre {
         margin: 0;
         padding-bottom: 0;
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 800;
     }
 
     .rfF {
@@ -320,10 +378,32 @@ strong {
     }
 
     .rffA {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin: 0;
-        margin-right: 1rem;
+        margin-right: 0.8rem;
         margin-top: 1rem;
+        border: #d9d9d9 solid 2px;
+        width: 50%;
     }
+
+    #economiqueTAG {
+        width: 49%;
+    }
+
+    #familleTAG {
+        width: 40%;
+    }
+
+    .RFF {
+        width: auto;
+        font-size: 18px;
+        font-weight: 800;
+        padding-right: 0;
+    }
+    
+
 }
 
 /* Article Résultat recherche */
@@ -343,11 +423,12 @@ strong {
 .rechercheI {
     margin-left: 20px;
     margin-right: 20px;
-    border: #333 solid 1px;
-    padding: 0.6rem;
+    border: #eeeeee solid 1px;
+    padding: 6px;
+    height: 10%;
+    width: 10px;
     border-radius: 50%;
-    height: 1rem;
-    width: 1rem;
+    font-size: 12px;
     text-align: center;
     color: #0065FC;
 }
@@ -358,7 +439,7 @@ strong {
     justify-content: space-around;
 }
 
-@media (max-width: 1312px)
+@media (max-width: 500px)
 {
     .rechercheResultat {
         display: none;
@@ -369,6 +450,8 @@ strong {
         flex-direction: row;
         align-items: center;
         width: 100%;
+        margin-bottom: 1.4rem;
+        margin-top: 1rem;
     }
 
     .rechercheText {
@@ -378,18 +461,21 @@ strong {
     .rechercheIMobile {
         color: #0065FC;
         width: 1rem;
-        padding: 0.1rem;
-        border: solid 1px #F2F2F2;
+        font-size: 12px;
+        padding: 0.2rem;
+        border: solid 1px #e0e0e0;
         border-radius: 50%;
         text-align: center;
         align-self: flex-start;
-        margin-top: 0.7rem;
+        margin-top: 0.9rem;
         margin-left: 1rem;
     }
 
     .rechercheTextMobile {
         width: 100%;
         margin-left: 1rem;
+        font-size: 16px;
+        font-weight: 500;
     }
 }
 
@@ -497,6 +583,9 @@ strong {
     background-color: #F2F2F2;
     margin-left: 20px;
     margin-top: 0;
+    margin-bottom: -3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .hTitle2 {
@@ -507,6 +596,12 @@ strong {
     background-color: #F2F2F2;
     border-radius: 25px 25px;
     width: 60%;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stockImg {
+    font-size: 1.5rem;
 }
 
 .imgHeb {
@@ -557,12 +652,11 @@ strong {
 }
 
 .h3Heb {
-    text-align: start;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
-    height: 10%;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    height: 25%;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .h3Heb2 {
@@ -586,7 +680,8 @@ strong {
 .pHeb {
     text-align: start;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 0px;
+    margin-bottom: 0;
     font-weight: 500;
     font-size: 15px;
 } 
@@ -605,6 +700,7 @@ strong {
     justify-content: flex-start;
     margin-bottom: 5px;
     color: #0065FC;
+    font-size: 15px;
 }
 
 .starsHeb2 {
@@ -625,6 +721,9 @@ strong {
     width: 100%;
     padding: 0;
     margin-left: 1.7rem;
+    margin-top: -2rem;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 .aHebPlus:hover {
@@ -635,6 +734,8 @@ strong {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
 }
 
 .stockImg {
@@ -643,7 +744,7 @@ strong {
     margin-top: 5px;
 }
 
-@media (max-width: 1312px)
+@media (max-width: 500px)
 
 {
 
@@ -658,6 +759,7 @@ strong {
         display: block;
         order: 2;
         margin: 0;
+        margin-bottom: 1rem;
         border: 0;
         padding: 0;
         border-radius: 0;
@@ -671,7 +773,7 @@ strong {
         margin: 0;
         border: none;
         border-radius: 0;
-        background-color: #f7f7f7;
+        background-color: #f2f2f2;
         margin-left: 2rem;
         padding-left: 3rem;
     }
@@ -693,37 +795,39 @@ strong {
     .hTitle1 {
         background-color: white;
         margin-bottom: 1.4rem;
-        font-weight: 700;
-        margin-top: 1rem;
-        font-size: 20px;
+        font-weight: 800;
+        margin-top: 2rem;
+        font-size: 22px;
     }
 
     .hTitle2 {
-        background-color: #f7f7f7;
+        background-color: #f2f2f2;
         margin-top: 1rem;
         margin-bottom: 1rem;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .hcard1 {
         height: 200px;
-        width: 100%;
-    }
-
-    .hcard2 {
-        height: 200px;
-        width: 100%;
-    }
-
-    .hcard3 {
-        height: 150px;
         width: 90%;
         margin: auto;
     }
 
+    .hcard2 {
+        height: 200px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .hcard3 {
+        height: 150px;
+        width: 21rem;
+        border: white solid 4px;
+    }
+
     .textCard {
-        margin-left: 0.4rem;
+        margin-left: 0.8rem;
     }
 
     .pHeb {
@@ -735,7 +839,7 @@ strong {
         flex-wrap: wrap;
         flex-direction: column;
         height: auto;
-        width: auto;
+        width: 60%;
     }
 
     .imgHeb2 {
@@ -743,25 +847,64 @@ strong {
     }
 
     .imgHeb3 {
-        width: 50%;
+        width: 130px;
+    }
+
+    .stockImg {
+        font-size: 20px;
     }
 
     .aHebPlus {
         margin-left: 1rem;
         margin-bottom: 3rem;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .h3Heb {
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: 0.6rem;
     }
 
     .h3Heb2 {
-        font-size: 15px;
+        height: 100%;
+        width: 70%;
+        font-size: 16px;
+        font-weight: 800;
+        margin: 0;
+        margin-left: 0.7rem;
+        margin-top: 0.5rem;
     }
 
     .pHeb2 {
         font-size: 12px;
-        margin-top: 1.3rem;
+        margin-top: 0.6rem;
+        margin-left: 0.6rem;
+        font-size: 14px;
+        font-weight: 600;
     }
 
     .stockImg {
         margin-top: 1.2rem;
+    }
+
+    .starsHeb {
+        font-size: 70%;
+    }
+
+    .starsHeb2 {
+        font-size: 12px;
+        margin-left: 0.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #hotelTbeB {
+        background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    }
+
+    .etgrise {
+        color: #f2f2f2;
     }
 
 }
@@ -770,6 +913,10 @@ strong {
 
 .actMars {
     margin-left: 20px;
+}
+
+.actBigMobile {
+    display: none;
 }
 
 .actBig {
@@ -870,70 +1017,63 @@ strong {
     color: rgb(29, 29, 29);
 }
 
-@media (max-width: 1000px) 
+#activites {
+    font-weight: 700;
+}
+
+@media (max-width: 500px) 
 {
     .actBig {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        display: none;
+    }
+
+    .actBigMobile {
+        display: block;
         height: auto;
         width: 100%;
     }
 
     .aAct {
-        width: 100%;
-        height: 200px;
+        margin: auto;
         margin-bottom: 1rem;
+        width: 95%;
+        height: 200px;
     }
-
-
 
     .actOne {
         width: 100%;
         height: 100%;
-        margin-bottom: 1rem;
-    }
-
-    .actTwo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 1rem;
-    }
-    
-    .aAct2 {
-        display: flex;
-        width: 100%;
-        height: 200px;
     }
 
     .act1 {
-        width: 100%;
+        width: 98%;
         height: 200px;
-        margin: auto;
-    }
-
-    .act2 {
-        width: 100%;
-        height: 95%;
-        margin: auto;
     }
 
     .h3Act {
-        font-size: 20px;
+        width: 80%;
+        font-size: 17px;
         margin: 0;
-        margin-left: 0.4rem;
-        margin-top: 0.6rem;
+        margin-left: 1rem;
+        margin-top: 1.3rem;
+        font-weight: 800;
     }
 
     .imgAct {
-        height: 80%;
+        height: 70%;
+        width: 100%;
+        object-fit: cover;
     }
 
-    .imgAct2 {
-        height: 80%;
+    .actMars {
+        font-size: 15px;
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    #activites {
+        font-size: 22px;
+        font-weight: 700;
     }
 
 }
@@ -942,6 +1082,10 @@ strong {
 
 footer {
     width: 100%;
+}
+
+.footH3 {
+    font-weight: 700;
 }
 
 .thefooter {
@@ -958,36 +1102,30 @@ footer {
     justify-content: space-between;
     width: 70%;
     height: 90%;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .fbListe {
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
+    margin-top: 1.5rem;
 }
 
 .fbListe  a {
     padding-left: 0;
     padding-bottom: 0;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
     color: #333;
 }
 
-@media (max-width: 1312px)
+@media (max-width: 500px)
 {
     .thefooter {
         width: 100%;
         height: auto;
-        margin-left: -1rem;
-        padding-right: 2rem;
-        padding-left: 1rem;
-    }
-
-    .thefooter a {
-        padding-top: 0.3rem;
     }
 
     .footbox {
@@ -1000,7 +1138,21 @@ footer {
         margin-bottom: 1rem;
     }
 
-    .footH3 {
-        font-weight: 650;
+    .fbListe a {
+        padding-top: 0.9rem;
+        font-size: 16px;
+        height: 0.8rem;
+        font-weight: 600;
     }
+
+    .footH3 {
+        font-size: 17px;
+        font-weight: 800;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+
+
+
 }

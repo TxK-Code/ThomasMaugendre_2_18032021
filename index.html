@@ -20,12 +20,12 @@
             <a class="navMobileHeader" href="#">S'inscrire</a>
             <nav class="navHeader">
                 <a class="navA" href="#hébergements">Hébergement</a>
-                <a class="navA" href="#activités">Activités</a>
+                <a class="navA" href="#activites">Activités</a>
                 <a class="navA2" href="#">S'inscrire</a>
             </nav>
             <nav class="navHeaderMobile">
                 <a class="navAMob" href="#hébergements">Hébergement</a>
-                <a class="navAMob" href="#activités">Activités</a>
+                <a class="navAMob" href="#activites">Activités</a>
             </nav>
         </header>
 
@@ -34,7 +34,7 @@
         <section class="recherche">
 
             <header class="rechercheHead">
-                <h1>Trouvez votre hébergement pour des vacances de rêve.</h1>
+                <h1 id="headerh1">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </header>
 
@@ -48,10 +48,10 @@
             <div class="rechercheFiltres">
                     <h2 class="rfTitre">Filtres</h2>
                 <div class="rechercheFiltresFlex">
-                    <a class="rffA" href="#">
+                    <a id="economiqueTAG" class="rffA" href="#">
                     <div class="RFF"><i class="fas fa-money-bill-wave-alt rfF"></i>Economique</div>
                     </a>
-                    <a class="rffA" href="#">
+                    <a id="familleTAG" class="rffA" href="#">
                     <div class="RFF"><i class="fas fa-child rfF"></i>Familial</div>
                     </a>
                     <a class="rffA" href="#">
@@ -82,7 +82,7 @@
 
         <div id="hébergements" class="magicBox">
             <div class="hebergementFirst">
-                    <h3 class="hTitle1">Hébérgement à Marseille</h3>
+                    <h3 class="hTitle1">Hébergements à Marseille</h3>
                 <a href="#" class="aHeb">
                     <div class="hcard1">
                         <img class="imgHeb" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre avec lits superposés">
@@ -212,7 +212,7 @@
                         <img class="imgHeb3" src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre luxe, grise">
                         <div class="textCard2">
                             <div class="texteCarte">
-                                <h3 class="h3Heb3">Au coeur de l'eau Chambres d'hôtes</h3>
+                                <h3 class="h3Heb2">Au coeur de l'eau Chambres d'hôtes</h3>
                                 <p class="pHeb2">Nuit à partir de <strong>71€</strong></p>
                             </div>
                             <div class="starsHeb2">
@@ -227,7 +227,7 @@
                 </a>
                 <a href="#" class="aHeb2">
                     <div class="hcard3">
-                        <img class="imgHeb3" src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Lit double, tête de lit bois">
+                        <img id="hotelTbeB" class="imgHeb3" src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Lit double, tête de lit bois">
                         <div class="textCard2">
                             <div class="texteCarte">
                                 <h3 class="h3Heb2">Hôtel Tout bleu et Blanc</h3>
@@ -249,10 +249,10 @@
     <!--Seconde partie, Activitées-->
 
     <div class="actMars">
-        <h3>Activités à Marseille</h3>
+        <h3 id="activites">Activités à Marseille</h3>
     </div>    
 
-    <div id="activités" class="actBig">
+    <div class="actBig">
         <a href="#" class="aAct">
             <div class="actOne">
                 <div class="act1">
@@ -299,9 +299,62 @@
             </div>
     </div>
 
-<footer>
+    <!--Activitées Responsive-->
+
+    <div class="actBigMobile">
+        <a href="#" class="aAct">
+            <div class="actOne">
+                <div class="act1">
+                    <img class="imgAct" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port Marseille">
+                    <h3 class="h3Act">Vieux Port</h3>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="aAct">
+            <div class="actOne">
+                <div class="act1">
+                    <img class="imgAct" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort Pomègue">
+                    <h3 class="h3Act">Fort de Pomègue</h3>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="aAct">
+            <div class="actOne">
+                <div class="act1">
+                    <img class="imgAct" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+                    <h3 class="h3Act">Îles du Frioul</h3>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="aAct">
+            <div class="actOne">
+                <div class="act1">
+                    <img class="imgAct" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques">
+                    <h3 class="h3Act">Parc National des Calanques</h3>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="aAct">
+            <div class="actOne">
+                <div class="act1">
+                    <img class="imgAct" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                    <h3 class="h3Act">Notre-Dame-de-la-Garde</h3>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="aAct">
+            <div class="actOne">
+                <div class="act1">
+                    <img class="imgAct" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                    <h3 class="h3Act">Parc Longchamp</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
         <!--Footer-->
-        
+
+<footer>  
         <div class="thefooter">
             <div class="footbox">
                 <div class="fbListe">
@@ -322,9 +375,6 @@
                 </div>
             </div>
         </div>
-
-
-
 </footer>
 
 </main>
