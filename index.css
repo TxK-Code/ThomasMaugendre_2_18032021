@@ -91,7 +91,7 @@ strong {
     cursor: pointer;
 }
 
-@media (max-width: 500px)
+@media (max-width: 595px)
 {
     header {
         display: flex;
@@ -152,6 +152,13 @@ strong {
     }
 }
 
+@media (min-width: 501px) and (max-width: 593px)
+{
+    .header {
+        width: 100%;
+    }
+}
+
 /* Article, header */
 
 .rechercheHead h1 {
@@ -189,7 +196,7 @@ strong {
 .rechercheInput {
     border-left: none;
     border-right: none;
-    border: #deebff 1px solid;
+    border: #F2F2F2 1px solid;
     padding-left: 10px;
     font-weight: 700;
     font-size: 18px;
@@ -246,6 +253,30 @@ strong {
         font-size: 18px;
         font-weight: 800;
         margin-right: -2rem;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 1025px)
+{
+    .rechercheHead {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .rechercheHead p {
+        text-align: center;
+        margin: auto;
+    }
+
+    .rechercheBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
 }
@@ -402,8 +433,27 @@ strong {
         font-weight: 800;
         padding-right: 0;
     }
-    
+}
 
+@media (min-width: 501px) and (max-width: 1025px)
+{
+    .rfTitre {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .rechercheFiltresFlex {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .rffA {
+        margin: 0.5rem;
+    }
 }
 
 /* Article Résultat recherche */
@@ -479,16 +529,27 @@ strong {
     }
 }
 
+@media (min-width: 501px) and (max-width: 1025px)
+{
+    .rechercheResultat {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
 /* Cartes Hébergements */
 
 .magicBox {
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
-    height: 46rem;
+    height: auto;
 }
 
 .hebergementFirst {
@@ -497,9 +558,7 @@ strong {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
-    width: 55%;
-    margin: 1rem;
+    width: 49%;
     border-radius: 25px;
     height: 45rem;
     padding-left: 2rem;
@@ -511,8 +570,7 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 35%;
-    margin: 1rem;
+    width: 39%;
     border-radius: 25px;
     height: 45rem;
 }
@@ -522,7 +580,6 @@ strong {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
     width: 100%;
     height: 100%;
     border-radius: 25px;
@@ -574,7 +631,7 @@ strong {
     flex-direction: column;
     padding: 0;
     color: black;
-    margin-left: 2.3rem;
+    margin: auto;
 }
 
 .hTitle1 {
@@ -586,6 +643,7 @@ strong {
     margin-bottom: -3rem;
     font-size: 1.5rem;
     font-weight: 700;
+    padding-top: 0.8rem;
 }
 
 .hTitle2 {
@@ -653,16 +711,16 @@ strong {
 
 .h3Heb {
     font-weight: 700;
-    font-size: 20px;
-    height: 25%;
+    font-size: 15px;
+    width: 100%;
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: -0.9rem;
 }
 
 .h3Heb2 {
     text-align: start;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     height: 10%;
     margin-top: 10px;
     margin-bottom: 0;
@@ -689,8 +747,9 @@ strong {
 .pHeb2 {
     text-align: start;
     width: 100%;
-    font-weight: 400;
-    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 1.5rem;
     margin-bottom: 0;
 }
 
@@ -707,6 +766,7 @@ strong {
     display: flex;
     color: #0065FC;
     margin-bottom: 5px;
+    font-size: 15px;
 }
 
 .etgrise {
@@ -734,7 +794,7 @@ strong {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
     margin-bottom: -1rem;
 }
 
@@ -774,8 +834,6 @@ strong {
         border: none;
         border-radius: 0;
         background-color: #f2f2f2;
-        margin-left: 2rem;
-        padding-left: 3rem;
     }
 
     .aHeb {
@@ -830,8 +888,13 @@ strong {
         margin-left: 0.8rem;
     }
 
+    .titrePlusImgHebTop {
+        margin-bottom: 0.7rem;
+    }
+
     .pHeb {
         margin-bottom: 0.3rem;
+        margin-top: 0.8rem;
     }
 
     .textCard2 {
@@ -909,6 +972,65 @@ strong {
 
 }
 
+@media (min-width: 501px) and (max-width: 1025px)
+{
+    .magicBox {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .hebergementFirst {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 94%;
+        margin: auto;
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+        order: 1;
+        border-radius: 25px;
+    }
+
+    .hebergementSecond {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 96%;
+        margin: auto;
+        order: 2;
+        background-color: white;
+        margin-bottom: 2rem;
+    }
+
+    .titrePlusImgHebTop {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin: auto;
+        padding-left: 2.1rem;
+        padding-right: 2.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hTitle2 {
+        background-color: white;
+    }
+
+    .h3Heb {
+        font-size: 17px;
+        width: auto;
+    }
+
+    .pHeb {
+        font-size: 14px;
+    }
+
+}
+
 /* Activités */
 
 .actMars {
@@ -925,8 +1047,9 @@ strong {
     border-radius: 25px;
     width: 100%;
     flex-direction: row;
-    align-items: center;
-    height: 30rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
     margin-top: 1rem;
 }
 
@@ -934,28 +1057,23 @@ strong {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
-    height: 100%;
 }
 
 .actTwo {
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    width: 95%;
-    height: 100%;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    width: 23%;
 }
 
 .aAct {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 94%;
-    height: 100%;
+    width: 23%;
     text-decoration: none;
     color: black;
     padding: 0;
@@ -964,18 +1082,18 @@ strong {
 
 .aAct2 {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 48%;
     text-decoration: none;
     color: black;
     padding: 0;
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .act1 {
     background-color: white;
-    height: 100%;
+    width: 100%;
+    height: 28rem;
     margin-top: 0;
     border-radius: 25px;
     border: 3px solid white;
@@ -987,7 +1105,7 @@ strong {
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    width: 100%;
     margin-top: 0;
     border-radius: 25px;
     border: 3px solid white;
@@ -1003,7 +1121,7 @@ strong {
 }
 
 .imgAct2 {
-    height: 180px;
+    height: 175px;
     width: 100%;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
@@ -1011,14 +1129,18 @@ strong {
 
 .h3Act {
     text-align: start;
-    margin-left: 15px;
-    margin-top: 10px;
+    margin-left: 14px;
+    margin-top: 0;
     font-weight: 600;
     color: rgb(29, 29, 29);
 }
 
-#activites {
-    font-weight: 700;
+.h3Act2 {
+    text-align: start;
+    margin-left: 14px;
+    margin-top: 5px;
+    font-weight: 600;
+    color: rgb(29, 29, 29);
 }
 
 @media (max-width: 500px) 
@@ -1055,7 +1177,7 @@ strong {
         font-size: 17px;
         margin: 0;
         margin-left: 1rem;
-        margin-top: 1.3rem;
+        margin-top: 0.9rem;
         font-weight: 800;
     }
 
@@ -1074,6 +1196,31 @@ strong {
     #activites {
         font-size: 22px;
         font-weight: 700;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 1025px)
+{
+
+    .aAct {
+        width: 45%;
+        margin-bottom: 1rem;
+    }
+
+    .actTwo {
+        width: 45%;
+    }
+
+    .h3Act {
+        font-size: 16px;
+        margin-top: 0.3rem;
+    }
+
+    #activites {
+        font-size: 24px;
+        padding-left: 1.8rem;
+        padding-bottom: 0.3rem;
     }
 
 }
@@ -1151,8 +1298,18 @@ footer {
         width: 100%;
         margin-bottom: 0.5rem;
     }
+}
 
+@media (min-width: 501px) and (max-width: 1025px)
+{
 
+    .footbox {
+        width: 100%;
+    }
 
-
+    .fbListe {
+        margin-right: 0.5rem;
+        width: 30%;
+        text-align: start;
+    }
 }
