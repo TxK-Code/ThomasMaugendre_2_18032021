@@ -86,12 +86,14 @@ strong {
 .navA:hover {
     color: #0065FC;
     font-weight: bold;
-    padding-top: 25px;
-    border-top: #0065FC 3px solid;
+    padding-top: 1rem;
+    border-top: #0065FC 4px solid;
     cursor: pointer;
 }
 
-@media (max-width: 595px)
+/* Header Mobile */
+
+@media (max-width: 501px)
 {
     header {
         display: flex;
@@ -152,14 +154,16 @@ strong {
     }
 }
 
-@media (min-width: 501px) and (max-width: 593px)
+/*Header Tablette */
+
+@media (min-width: 501px) and (max-width: 1025px)
 {
     .header {
         width: 100%;
     }
 }
 
-/* Article, header */
+/* RechercheBar */
 
 .rechercheHead h1 {
     margin-bottom: 0;
@@ -180,7 +184,7 @@ strong {
 }
 
 .rechercheBar {
-    display: inline-flex;
+    display: flex;
     max-width: 100%;
     padding-left: 20px;
 }
@@ -225,7 +229,9 @@ strong {
     display: none;
 }
 
-@media (max-width: 500px)
+/* RechercheBar Mobile */
+
+@media (max-width: 501px)
 {
 
     #headerh1 {
@@ -257,6 +263,8 @@ strong {
 
 }
 
+/* RechercheBar Tablette */
+
 @media (min-width: 501px) and (max-width: 1025px)
 {
     .rechercheHead {
@@ -281,7 +289,7 @@ strong {
 
 }
 
-/* Articles Filtres */
+/* Filtres */
 
 .rechercheFiltres {
     display: flex;
@@ -328,7 +336,6 @@ strong {
 
 .RFF:hover {
     color: #0065FC;
-    font-weight: 600;
     transition: 0.2s;
 }
 
@@ -342,7 +349,9 @@ strong {
     width: 1rem;
 }
 
-@media (max-width: 500px)
+/* Filtres Mobile */
+
+@media (max-width: 501px)
 {
     .rechercheFiltres {
         display: block;
@@ -435,6 +444,8 @@ strong {
     }
 }
 
+/* Filtres Tablette */
+
 @media (min-width: 501px) and (max-width: 1025px)
 {
     .rfTitre {
@@ -456,7 +467,7 @@ strong {
     }
 }
 
-/* Article Résultat recherche */
+/* Résultat recherche */
 
 .rechercheResultat {
     display: flex;
@@ -489,7 +500,9 @@ strong {
     justify-content: space-around;
 }
 
-@media (max-width: 500px)
+/* Résultat recherche Mobile */
+
+@media (max-width: 501px)
 {
     .rechercheResultat {
         display: none;
@@ -528,6 +541,8 @@ strong {
         font-weight: 500;
     }
 }
+
+/* Résultat recherche Tablette */
 
 @media (min-width: 501px) and (max-width: 1025px)
 {
@@ -677,8 +692,7 @@ strong {
 }
 
 .imgHeb3 {
-    width: 100%;
-    height: 100%;
+    width: 50%;
     border-radius: 25px 0 0 25px;
     object-fit: cover;
 }
@@ -777,12 +791,10 @@ strong {
     color: black;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 600;
     width: 100%;
     padding: 0;
     margin-left: 1.7rem;
     margin-top: -2rem;
-    font-size: 18px;
     font-weight: 800;
 }
 
@@ -804,7 +816,9 @@ strong {
     margin-top: 5px;
 }
 
-@media (max-width: 500px)
+/* Cartes Hébergements Mobile */
+
+@media (max-width: 501px)
 
 {
 
@@ -972,6 +986,8 @@ strong {
 
 }
 
+/* Cartes Hébergements Tablette */
+
 @media (min-width: 501px) and (max-width: 1025px)
 {
     .magicBox {
@@ -1093,7 +1109,7 @@ strong {
 .act1 {
     background-color: white;
     width: 100%;
-    height: 28rem;
+    height: 96%;
     margin-top: 0;
     border-radius: 25px;
     border: 3px solid white;
@@ -1121,7 +1137,7 @@ strong {
 }
 
 .imgAct2 {
-    height: 175px;
+    height: 180px;
     width: 100%;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
@@ -1130,7 +1146,7 @@ strong {
 .h3Act {
     text-align: start;
     margin-left: 14px;
-    margin-top: 0;
+    margin-top: 7px;
     font-weight: 600;
     color: rgb(29, 29, 29);
 }
@@ -1138,12 +1154,15 @@ strong {
 .h3Act2 {
     text-align: start;
     margin-left: 14px;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 600;
     color: rgb(29, 29, 29);
 }
 
-@media (max-width: 500px) 
+/* Activités Mobile */
+
+@media (max-width: 501px) 
 {
     .actBig {
         display: none;
@@ -1200,6 +1219,8 @@ strong {
 
 }
 
+/* Activités Tablette */
+
 @media (min-width: 501px) and (max-width: 1025px)
 {
 
@@ -1225,7 +1246,7 @@ strong {
 
 }
 
-/*Footer*/
+/* Footer */
 
 footer {
     width: 100%;
@@ -1268,7 +1289,9 @@ footer {
     color: #333;
 }
 
-@media (max-width: 500px)
+/* Footer Mobile */
+
+@media (max-width: 501px)
 {
     .thefooter {
         width: 100%;
@@ -1281,7 +1304,7 @@ footer {
     }
 
     .fbListe {
-        width: 100%;
+        width: 90%;
         margin-bottom: 1rem;
     }
 
@@ -1299,6 +1322,8 @@ footer {
         margin-bottom: 0.5rem;
     }
 }
+
+/* Footer Tablette */
 
 @media (min-width: 501px) and (max-width: 1025px)
 {
