@@ -44,12 +44,12 @@ strong {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 
 .imgHeader {
     display: block;
-    padding-left: 20px;
     height: 50px;
 }
 
@@ -133,7 +133,6 @@ strong {
         display: flex;
         order: 3;
         width: 100%;
-        margin: auto;
     }
 
     .navAMob {
@@ -161,6 +160,10 @@ strong {
     .header {
         width: 100%;
     }
+
+    .imgHeader {
+        margin-left: 1.7rem;
+    }
 }
 
 /* RechercheBar */
@@ -180,13 +183,14 @@ strong {
 
 .rechercheHead {
     padding-bottom: 10px ;
-    padding-left: 20px;
+    padding-left: 2.8rem;
 }
 
 .rechercheBar {
     display: flex;
-    max-width: 100%;
-    padding-left: 20px;
+    width: 100%;
+    padding-left: 2.7rem;
+    margin-bottom: 0;
 }
 
 .rechercheIco {
@@ -204,6 +208,7 @@ strong {
     padding-left: 10px;
     font-weight: 700;
     font-size: 18px;
+    padding-right: 1.7rem;
 }
 
 .rechercheInput::placeholder {
@@ -239,6 +244,10 @@ strong {
         font-weight: 800;
     }
 
+    .rechercheHead {
+        padding-left: 20px;
+    }
+
     .rechercheHead p {
         font-size: 16px;
         font-weight: 700;
@@ -246,7 +255,6 @@ strong {
 
     .rechercheBar {
         width: 100%;
-        margin: auto;
         padding: 0;
     }
 
@@ -259,6 +267,7 @@ strong {
         font-size: 18px;
         font-weight: 800;
         margin-right: -2rem;
+        padding-right: 0;
     }
 
 }
@@ -285,6 +294,7 @@ strong {
         justify-content: center;
         width: 100%;
         margin-bottom: 2rem;
+        padding-left: 0;
     }
 
 }
@@ -294,17 +304,20 @@ strong {
 .rechercheFiltres {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     font-weight: 600;
+    margin-left: 1.8rem;
+    margin: auto;
 }
 
 .rechercheFiltresFlex {
     display: flex;
+    margin-left: -2.5rem;
 }
 
 .rfTitre {
     padding: 20px;
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .rffA {
@@ -355,6 +368,7 @@ strong {
 {
     .rechercheFiltres {
         display: block;
+        margin-left: 0;
     }
 
     .rechercheFiltresFlex {
@@ -475,6 +489,7 @@ strong {
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 1rem;
+    margin-left: 1.7rem;
 }
 
 .rechercheResultatMobile {
@@ -552,6 +567,7 @@ strong {
         flex-direction: row;
         justify-content: center;
         margin-top: 1rem;
+        margin: auto;
     }
 }
 
@@ -573,11 +589,12 @@ strong {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 49%;
+    width: 62%;
     border-radius: 25px;
-    height: 45rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    height: 38rem;
+    padding-bottom: 1rem;
 }
 
 .hebergementSecond {
@@ -585,9 +602,10 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 39%;
+    width: 29%;
     border-radius: 25px;
-    height: 45rem;
+    height: 38rem;
+    padding-bottom: 1rem;
 }
 
 .hcard1 {
@@ -600,6 +618,11 @@ strong {
     border-radius: 25px;
     border: 3px solid white;
     box-shadow: rgba(100, 100, 100, 0.1) 10px 10px 5px;
+}
+
+.hcard1:hover {
+    box-shadow: rgba(100, 100, 100, 0.5) 10px 10px 5px;
+    transition: 0.3s;
 }
 
 .hcard2 {
@@ -615,6 +638,11 @@ strong {
     box-shadow: rgba(100, 100, 100, 0.1) 10px 10px 5px;
 }
 
+.hcard2:hover {
+    box-shadow: rgba(100, 100, 100, 0.5) 10px 10px 5px;
+    transition: 0.3s;
+}
+
 .hcard3 {
     background-color: white;
     display: flex;
@@ -626,6 +654,11 @@ strong {
     border: 3px solid white;
     align-self: center;
     box-shadow: rgba(100, 100, 100, 0.1) 10px 10px 5px;
+}
+
+.hcard3:hover {
+    box-shadow: rgba(100, 100, 100, 0.5) 10px 10px 5px;
+    transition: 0.3s;
 }
 
 .aHeb {
@@ -654,27 +687,28 @@ strong {
     width: 100%;
     background-color: #F2F2F2;
     margin-left: 20px;
-    margin-top: 0;
-    margin-bottom: -3rem;
+    margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
     padding-top: 0.8rem;
+    height: 3rem;
 }
 
 .hTitle2 {
     background-color: white;
-    width: 100%;
-    margin-top: 0px;
+    margin-top: 1rem;
     margin-left: 0;
     background-color: #F2F2F2;
     border-radius: 25px 25px;
     width: 60%;
     font-size: 1.5rem;
     font-weight: 700;
+    height: 3rem;
 }
 
 .stockImg {
     font-size: 1.5rem;
+    padding-top: 0.8rem;
 }
 
 .imgHeb {
@@ -792,14 +826,22 @@ strong {
     text-decoration: none;
     font-size: 18px;
     width: 100%;
+    height: 20px;
     padding: 0;
-    margin-left: 1.7rem;
-    margin-top: -2rem;
-    font-weight: 800;
+    margin-left: 0.5rem;
+    margin-right: auto;
+    font-weight: 700;
+    align-self: flex-end;
+    margin-bottom: 2rem;
 }
 
-.aHebPlus:hover {
+.aHebPlusA {
+    padding-top: 0;
+}
+
+.aHebPlusA:hover {
     cursor: pointer;
+    font-weight: 800;
 }
 
 .titrePlusImgHebTop {
@@ -807,7 +849,7 @@ strong {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 0.7rem;
-    margin-bottom: -1rem;
+    margin-bottom: 0rem;
 }
 
 .stockImg {
@@ -848,6 +890,7 @@ strong {
         border: none;
         border-radius: 0;
         background-color: #f2f2f2;
+        padding-bottom: 1rem;
     }
 
     .aHeb {
@@ -1001,7 +1044,7 @@ strong {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 94%;
+        width: 93%;
         margin: auto;
         padding-left: 1.3rem;
         padding-right: 1.3rem;
@@ -1037,7 +1080,7 @@ strong {
     }
 
     .h3Heb {
-        font-size: 17px;
+        font-size: 16px;
         width: auto;
     }
 
@@ -1045,6 +1088,44 @@ strong {
         font-size: 14px;
     }
 
+}
+
+/* Cartes 1222px to 1025px */
+
+@media (min-width: 1025px) and (max-width: 1222px)
+{
+    .h3Heb {
+        font-size: 13px;
+        margin-bottom: 0.1rem;
+    }
+
+    .pHeb {
+        font-size: 12px;
+    }
+}
+
+/* Cartes 501px to 676px */
+
+@media (min-width: 502px) and (max-width: 676px)
+{
+    .h3Heb {
+        font-size: 13px;
+    }
+
+    .pHeb {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1324px)
+{
+    .h3Heb2 {
+        font-size: 14px;
+    }
+
+    .pHeb2 {
+        font-size: 13px;
+    }
 }
 
 /* Activités */
@@ -1061,11 +1142,12 @@ strong {
     display: flex;
     background-color: white;
     border-radius: 25px;
-    width: 100%;
+    width: 97%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     height: auto;
+    margin: auto;
     margin-top: 1rem;
 }
 
@@ -1117,6 +1199,11 @@ strong {
     box-shadow: rgba(100, 100, 100, 0.1) 10px 10px 5px;
 }
 
+.act1:hover {
+    box-shadow: rgba(100, 100, 100, 0.5) 10px 10px 5px;
+    transition: 0.2s;
+}
+
 .act2 {
     background-color: white;
     display: flex;
@@ -1127,6 +1214,11 @@ strong {
     border: 3px solid white;
     text-align: center;
     box-shadow: rgba(100, 100, 100, 0.1) 10px 10px 5px;
+}
+
+.act2:hover {
+    box-shadow: rgba(100, 100, 100, 0.5) 10px 10px 5px;
+    transition: 0.2s;
 }
 
 .imgAct {
@@ -1158,6 +1250,10 @@ strong {
     margin-bottom: 10px;
     font-weight: 600;
     color: rgb(29, 29, 29);
+}
+
+#activites {
+    margin-left: 1.1rem;
 }
 
 /* Activités Mobile */
@@ -1287,6 +1383,11 @@ footer {
     font-weight: 600;
     text-decoration: none;
     color: #333;
+}
+
+.fbListe  a:hover {
+    font-weight: 700;
+    transition: 0.2s;
 }
 
 /* Footer Mobile */
