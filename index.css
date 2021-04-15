@@ -48,6 +48,8 @@ strong {
     margin: auto;
 }
 
+/*NavBar*/
+
 .imgHeader {
     display: block;
     height: 50px;
@@ -307,11 +309,11 @@ strong {
     font-weight: 600;
     margin-left: 1.8rem;
     margin: auto;
+    margin-left: 1.7rem;
 }
 
 .rechercheFiltresFlex {
     display: flex;
-    margin-left: -2.5rem;
 }
 
 .rfTitre {
@@ -481,6 +483,13 @@ strong {
     }
 }
 
+/* Filtres 1142px to 1026px */
+
+.rfTitre {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 /* Résultat recherche */
 
 .rechercheResultat {
@@ -571,7 +580,7 @@ strong {
     }
 }
 
-/* Cartes Hébergements */
+/* Cartes, Hébergements*/
 
 .magicBox {
     background-color: white;
@@ -1017,10 +1026,6 @@ strong {
         font-size: 12px;
         margin-left: 0.6rem;
         margin-bottom: 0.8rem;
-    }
-
-    #hotelTbeB {
-        background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
     }
 
     .etgrise {
