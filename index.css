@@ -48,7 +48,7 @@ strong {
     margin: auto;
 }
 
-/*NavBar #01*/
+/*NavBar*/
 
 .imgHeader {
     display: block;
@@ -153,6 +153,24 @@ strong {
         left: 14rem;
         text-align: center;
         font-size: 18px;
+        }
+}
+
+/*NavBar 599px to 553px*/
+
+@media (min-width: 553px) and (max-width: 599px)
+{
+    .navA2 {
+        margin-left: 6rem;
+    }
+}
+
+/*NavBar 553px to 501px*/
+
+@media (min-width: 501px) and (max-width: 553px)
+{
+    .navA2 {
+        margin-left: 5.2rem;
     }
 }
 
@@ -1130,6 +1148,16 @@ strong {
 
     .pHeb2 {
         font-size: 13px;
+    }
+}
+
+/* Cartes 1287px to 1026px */
+
+@media (min-width: 1026px) and (max-width: 1287px)
+{
+    .hTitle2 {
+        font-size: 20px;
+        font-weight: 700;
     }
 }
 
