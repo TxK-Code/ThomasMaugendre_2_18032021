@@ -48,7 +48,7 @@ strong {
     margin: auto;
 }
 
-/*NavBar*/
+/*NavBar #01*/
 
 .imgHeader {
     display: block;
@@ -507,7 +507,7 @@ strong {
 
 .rechercheI {
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; 
     border: #eeeeee solid 1px;
     padding: 6px;
     height: 10%;
