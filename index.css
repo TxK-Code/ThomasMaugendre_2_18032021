@@ -95,12 +95,13 @@ strong {
 
 /* Header Mobile */
 
-@media (max-width: 501px)
+@media (max-width: 599px)
 {
-    header {
+    .header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        height: auto;
     }
 
     h3 {
@@ -110,48 +111,48 @@ strong {
     .imgHeader {
         width: 35%;
         order: 1;
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     .navHeader {
-        display: none;
-    }
-
-    .navMobileHeader {
         display: flex;
-        justify-content: flex-end;
-        order: 2;
-        width: 30%;
-        height: 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        order: 1;
+        height: auto;
+        width: 100%;
         padding: 0;
-        margin-top: 1.8rem;
-        margin-right: 1.7rem;
-        text-decoration: none;
-        font-weight: 700;
-        color: #0065FC;
-        font-size: 17px;
     }
 
-    .navHeaderMobile {
-        display: flex;
-        order: 3;
-        width: 100%;
-    }
-
-    .navAMob {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-        text-decoration: none;
+    .navA {
+        width: 50%;
+        text-align: center;
+        padding: 0;
         color: #333;
         font-weight: 500;
+        padding-bottom: 0.9rem;
         border-bottom: solid #f2f2f2 3px;
+        margin-top: 0.5rem;
     }
 
-    .navAMob:hover {
+    .navA:hover {
         border-bottom: solid #0065FC 3px;
+        border-top: none;
+        padding: 0;
         color: #0065FC;
+    }
+
+    .navA2 {
+        width: 39%;
+        padding: 0;
+        position: relative;
+        bottom: 6rem;
+        left: 14rem;
+        text-align: center;
+        font-size: 18px;
     }
 }
 
@@ -529,23 +530,20 @@ strong {
 @media (max-width: 501px)
 {
     .rechercheResultat {
-        display: none;
-    }
-
-    .rechercheResultatMobile {
         display: flex;
         flex-direction: row;
         align-items: center;
         width: 100%;
         margin-bottom: 1.4rem;
         margin-top: 1rem;
+        margin-left: 0;
     }
 
     .rechercheText {
         text-align: center;
     }
 
-    .rechercheIMobile {
+    .rechercheI {
         color: #0065FC;
         width: 1rem;
         font-size: 12px;
@@ -558,11 +556,12 @@ strong {
         margin-left: 1rem;
     }
 
-    .rechercheTextMobile {
+    .rechercheText {
         width: 100%;
-        margin-left: 1rem;
+        margin-left: 0;
         font-size: 16px;
         font-weight: 500;
+        text-align: left;
     }
 }
 
@@ -900,6 +899,7 @@ strong {
         border-radius: 0;
         background-color: #f2f2f2;
         padding-bottom: 1rem;
+        padding-top: 1rem;
     }
 
     .aHeb {
@@ -926,7 +926,7 @@ strong {
 
     .hTitle2 {
         background-color: #f2f2f2;
-        margin-top: 1rem;
+        margin-top: 1.7rem;
         margin-bottom: 1rem;
         font-weight: 700;
         font-size: 22px;
@@ -1266,10 +1266,6 @@ strong {
 @media (max-width: 501px) 
 {
     .actBig {
-        display: none;
-    }
-
-    .actBigMobile {
         display: block;
         height: auto;
         width: 100%;
@@ -1278,7 +1274,7 @@ strong {
     .aAct {
         margin: auto;
         margin-bottom: 1rem;
-        width: 95%;
+        width: 98%;
         height: 200px;
     }
 
@@ -1287,7 +1283,19 @@ strong {
         height: 100%;
     }
 
+    .actTwo {
+        width: 98%;
+        height: auto;
+        display: flex;
+        margin: auto;
+    }
+
     .act1 {
+        width: 98%;
+        height: 200px;
+    }
+
+    .act2 {
         width: 98%;
         height: 200px;
     }
@@ -1301,7 +1309,22 @@ strong {
         font-weight: 800;
     }
 
+    .h3Act2 {
+        width: 80%;
+        font-size: 17px;
+        margin: 0;
+        margin-left: 1rem;
+        margin-top: 0.9rem;
+        font-weight: 800;
+    }
+
     .imgAct {
+        height: 70%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .imgAct2 {
         height: 70%;
         width: 100%;
         object-fit: cover;
